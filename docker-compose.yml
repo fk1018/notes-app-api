@@ -1,0 +1,8 @@
+version: '3'
+services:
+  notes-app-api:
+    build: .
+    volumes:
+      - './src:/notes-app-api/src'
+      - './tests:/notes-app-api/tests'
+      - './create.js:/notes-app-api/create.js'
